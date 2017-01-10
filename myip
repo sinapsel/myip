@@ -1,0 +1,6 @@
+#!/bin/bash
+echo ""
+echo -e "Public IP: \n\t " $(curl -# ifconfig.co && http ifconfig.co/city)"," $(http ifconfig.co/country)
+echo "Local IP: "
+ifconfig | grep "inet addr"
+echo -e "\n########################################################################"
